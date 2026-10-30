@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Dark-Pattern Risk Auditor",
+  "version": "0.1",
+  "description": "Flags potential dark-pattern risk indicators on shopping pages. Runs locally.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ]
+}
